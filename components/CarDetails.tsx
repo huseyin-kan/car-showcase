@@ -1,5 +1,6 @@
 "use client"
 import { CarProps } from '@/types';
+import { generateCarImageUrl } from '@/utils';
 import { Dialog, Transition } from '@headlessui/react';
 import Image from 'next/image';
 import {Fragment} from 'react'
@@ -43,17 +44,17 @@ const CarDetails = ({isOpen,closeModal,car}:CarDetailsProps) => {
                         </button>
                         <div className='flex-1 flex flex-col gap-3'>
                             <div className='car-details__main-image'>
-                                <Image src='/hero.png' alt='car' fill priority className='object-contain' />
+                                <Image src={generateCarImageUrl(car)} alt='car' fill priority className='object-contain' />
                             </div>
                             <div className='flex gap-3'>
                                 <div className='flex-1 relative w-full h-24 bg-primary-100 rounded-lg'>
-                                    <Image src='/hero.png' alt='car' fill priority className='object-contain' />
+                                    <Image src={generateCarImageUrl(car,'29')} alt='car' fill priority className='object-contain' />
                                 </div>
                                 <div className='flex-1 relative w-full h-24 bg-primary-100 rounded-lg'>
-                                    <Image src='/hero.png' alt='car' fill priority className='object-contain' />
+                                    <Image src={generateCarImageUrl(car,'33')} alt='car' fill priority className='object-contain' />
                                 </div>
                                 <div className='flex-1 relative w-full h-24 bg-primary-100 rounded-lg'>
-                                    <Image src='/hero.png' alt='car' fill priority className='object-contain' />
+                                    <Image src={generateCarImageUrl(car,'13')} alt='car' fill priority className='object-contain' />
                                 </div>
                             </div>
                         </div>
