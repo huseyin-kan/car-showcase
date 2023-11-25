@@ -27,9 +27,9 @@ const SearchManufacturer = ({manufacturer,setManufacturer}:SearchManufacturerPro
           leaveTo='opacity-0'
           afterLeave={()=>setQuery('')}
         >
-          <Combobox.Options>
+          <Combobox.Options className='search-manufacturer__options z-10'>
             {filteredManufacturers.map((item)=>(
-              <Combobox.Option key={item} className={({active})=>`relative search-manufacturer__option ${active ?'bg-primary-blue text-white':'text-gray-900'}`} value={item}>
+              <Combobox.Option key={item} className={({active})=>`search-manufacturer__option ${active ?'bg-primary-blue text-white':'text-gray-900'}`} value={item}>
                 {({selected,active})=>(
                   <>
                   <span className={`block truncate ${selected?'font-medium':'font-normal'}`}>
