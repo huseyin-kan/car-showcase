@@ -5,7 +5,7 @@ You can search and discover cars in the world you can check what prices of rent.
 
 
 ## Technologies
-I used Next.js, Tailwind, HeadlessUI, Cars by API-Ninjasi and Imagn studio API for SugGST.
+I used Next.js, Typescript, Tailwind, HeadlessUI, Cars by API-Ninjasi and Imagn studio API for SugGST.
 ## What has ?
 
 
